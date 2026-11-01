@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff7f5">
+  <meta name="description" content="Um cantinho especial para celebrar a nossa história de amor.">
+  <title>Um cantinho nosso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="love.css">
+  <script src="love.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#inicio" aria-label="Voltar ao início">nosso cantinho <span>♥</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#historia">Nossa história</a>
+      <a href="#momentos">Momentos</a>
+      <a href="#cartinha">Cartinha</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true">✦</span> Feito com amor, para nós</p>
+        <h1>Meu lugar favorito<br>é <em>ao seu lado.</em></h1>
+        <p class="hero-description">Entre tantos caminhos, que sorte a minha ter encontrado você. Este cantinho é para guardar um pouquinho de tudo que a gente é.</p>
+        <a class="button button-primary" href="#historia">Conheça a nossa história <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-photo photo-placeholder" role="img" aria-label="Foto do casal">
+        <img src="assets/foto-casal-1.png" alt="">
+        <span class="photo-sticker" aria-hidden="true">com<br>amor ✿</span>
+      </div>
+      <span class="hero-sparkle sparkle-one" aria-hidden="true">✳</span>
+      <span class="hero-sparkle sparkle-two" aria-hidden="true">♡</span>
+    </section>
+
+    <section class="together section-wrap" aria-labelledby="together-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">E a nossa história continua...</p>
+        <h2 id="together-title">Já faz tanto tempo que<br><em>escolhemos ficar.</em></h2>
+      </div>
+      <div class="counter-card" data-start-date="2022-06-30T00:00:00">
+        <div class="counter-heart" aria-hidden="true">♥</div>
+        <p class="counter-caption">Juntos há</p>
+        <div class="counter" aria-live="polite">
+          <div><strong id="counter-days">—</strong><span>dias</span></div>
+          <div><strong id="counter-hours">—</strong><span>horas</span></div>
+          <div><strong id="counter-minutes">—</strong><span>minutos</span></div>
+          <div><strong id="counter-seconds">—</strong><span>segundos</span></div>
+        </div>
+        <p class="counter-footnote">...e contando cada momento ao seu lado.</p>
+        <p class="counter-hint">Edite a data de início no atributo <code>data-start-date</code> deste bloco.</p>
+      </div>
+    </section>
+
+    <section class="story section-wrap" id="historia">
+      <div class="story-photo photo-placeholder" role="img" aria-label="Foto de um momento especial do casal">
+        <img src="assets/foto-casal-4.png" alt="">
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">O começo de tudo</p>
+        <h2 id="story-title">Toda grande história<br>começa com um <em>oi.</em></h2>
+        <p class="body-copy">A nossa começou de um jeito só nosso — e, desde então, cada conversa, cada abraço e cada sorriso virou parte da minha história favorita.</p>
+        <p class="body-copy">Agradeço por ser casa, aventura e calmaria. Que a gente continue colecionando capítulos lindos, sempre juntinhos.</p>
+        <p class="signature">Com todo o meu amor, <span aria-hidden="true">♥</span></p>
+      </div>
+    </section>
+
+    <section class="moments section-wrap" id="momentos">
+      <div class="section-heading">
+        <p class="eyebrow">Pequenos infinitos</p>
+        <h2>Meu tipo favorito<br>de <em>lembrança.</em></h2>
+        <p class="body-copy">Os dias simples também ficam incríveis quando são com você.</p>
+      </div>
+      <div class="memory-grid">
+        <article class="memory-card">
+          <div class="memory-photo photo-placeholder" role="img" aria-label="Foto do casal em um momento divertido">
+            <img src="assets/foto-casal-3.png" alt="">
+          </div>
+          <p>Um dia qualquer, inesquecível <span aria-hidden="true">✿</span></p>
+        </article>
+        <article class="memory-card memory-card-offset">
+          <div class="memory-photo photo-placeholder" role="img" aria-label="Foto do casal junto">
+            <img src="assets/foto-casal-5.png" alt="">
+          </div>
+          <p>Rir de nada e de tudo <span aria-hidden="true">☼</span></p>
+        </article>
+        <article class="memory-card">
+          <div class="memory-photo photo-placeholder" role="img" aria-label="Foto do casal em uma selfie">
+            <img src="assets/foto-casal-2.png" alt="">
+          </div>
+          <p>Mais um capítulo bonito <span aria-hidden="true">♡</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="love-note section-wrap" id="cartinha">
+      <span class="note-decoration" aria-hidden="true">♡</span>
+      <p class="eyebrow">Um lembrete para qualquer dia</p>
+      <h2>Se eu pudesse escolher<br>de novo, <em>escolheria você.</em></h2>
+      <button class="button button-light" id="letter-button" type="button" aria-expanded="false" aria-controls="letter-message">
+        Abrir minha cartinha <span aria-hidden="true">♥</span>
+      </button>
+      <div class="letter-message" id="letter-message" hidden>
+        <p>Você faz os meus dias mais leves e o meu coração mais feliz. Que sorte a minha ter você do jeitinho que é, chatinha as vezes pórem sempre amorosa, eu amo você todos os dias. Eu te amo — hoje, amanhã e em todos os nossos dias. <span aria-hidden="true">♥</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Feito com muito amor <span aria-hidden="true">♥</span> para a nossa história.</p>
+    <a href="#inicio">Voltar ao começo ↑</a>
+  </footer>
+</body>
+</html>
